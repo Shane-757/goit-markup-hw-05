@@ -103,11 +103,18 @@ img{
 
 .header-link:hover,
 .header-link:focus{
-    color:var(--accent-color)
+    color:var(--accent-color);
+   
+   
+    transform: translatex(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current{
-    color:var(--accent-color)
+    text-decoration: underline;
+    color:var(--accent-color);
 }
 
 .header-list-contact{
@@ -256,6 +263,7 @@ img{
 
 .job{
     padding-bottom: 94px;
+      
 }
 
 .job-title{
@@ -273,6 +281,18 @@ img{
 
 .job-item:not(:last-child){
     margin-right: 30px;
+}
+
+.job-item > .label{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: var(--white-color);
+    background:rgba(47, 48, 58, .8);
 }
 
 /*TEAM*/
