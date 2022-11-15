@@ -463,8 +463,13 @@ img{
      display: flex;
      flex-wrap: wrap;
      margin-top: calc(-1 * var(--card-gap));
-     margin-left: calc(-1 * var(--card-gap));   
+     margin-left: calc(-1 * var(--card-gap)); 
+
+    
 }
+
+
+
 
 .portfolio-filters-item:not(:last-child){
     margin-right: 8px;
@@ -478,8 +483,34 @@ img{
 .portfolio-list-item{
     flex-basis: calc(100%/3 - var(--card-gap));
     margin-left: var(--card-gap);
-    margin-top: var(--card-gap);   
+    margin-top: var(--card-gap); 
+
+    position: relative;
+    overflow: hidden;
+   
 }
+.porfolio-list-item:hover .overlay{
+    transform: translatey(0);
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 149, 243, 0.89);
+  
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+}
+
+.overlay > p {
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
 
 .portfolio-description{
     border-bottom: 1px solid #E5E5E5;  
