@@ -487,9 +487,10 @@ img{
 
     position: relative;
     overflow: hidden;
-   
 }
-.porfolio-list-item:hover .overlay{
+
+
+.porfolio-item-img:hover .overlay{
     transform: translatey(0);
 }
 .overlay{
