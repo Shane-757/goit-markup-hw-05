@@ -281,18 +281,25 @@ img{
 
 .job-item:not(:last-child){
     margin-right: 30px;
+    position: relative;
 }
 
+
+
 .job-item > .label{
+    position: absolute;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 27px;
+    padding-top: 28px;
     padding-bottom: 27px;
     color: var(--white-color);
-    background:rgba(47, 48, 58, .8);
+    background:rgba(47, 48, 58, 0.800);
 }
 
 /*TEAM*/
@@ -490,7 +497,7 @@ img{
 }
 
 
-.porfolio-item-img:hover .overlay{
+.porfolio-list-item:hover .overlay{
     transform: translatey(0);
 }
 .overlay{
@@ -506,10 +513,10 @@ img{
 }
 
 .overlay > p {
+    font-family: Roboto;
     color: #fff;
-    padding: 10px;
-    margin: 0;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 
