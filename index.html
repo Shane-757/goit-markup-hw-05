@@ -46,19 +46,7 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-                    <button class="hero-button"  type="button">Request our service</button> 
-                    <div class="modal">
-                        <div>
-                            <data-modal-open>modal.js</data-modal-open>
-                        </div>
-                    </div>
-                
-                    
-
-
-
-
-                </div>
+                    <button class="hero-button"  type="button" data-modal-open>Request our service</button> 
             </div>
         </section>           
         <section class="features">
@@ -358,6 +346,13 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop .is-hidden" data-modal>
+        <div class="modal-widnow">
+            <button type="button" class="modal-button" data-modal-close><svg class="icon-close" width="30px" height="30px">
+                <use href="images/sprite.svg#icon-close"></use>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
