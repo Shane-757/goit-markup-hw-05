@@ -107,6 +107,7 @@ img{
 .header-link:focus{
     color:var(--accent-color);
     transition: transform var(--time) var(--time-function);
+    text-decoration: underline;
 }
 
 .current{
@@ -117,7 +118,7 @@ img{
 .current::after{
     content: '';
     position: absolute;
-    width: 72px;
+    width: 100%;
     height: 4px;
     border-radius: 2px;
     left:0;
@@ -586,6 +587,7 @@ img{
     color:  var(--accent-color);
     line-height: 1.19;
     margin-bottom: 9px;
+    display: block;
 }
 
 .footer-location{
@@ -595,6 +597,7 @@ img{
     font-style: normal;
     color: var(--white-color);
     margin-bottom: 2px;
+    display: block;
 }
 
 .footer-location:hover,
@@ -685,7 +688,7 @@ img{
     visibility: hidden;
     pointer-events: none;
 }
-
+/* style="fill: var(--color1, #fff)"  style="fill: var(--color2, #000)"  stroke="#000" */
 .modal-widnow{
     position: absolute;
     width: 528px;
@@ -702,6 +705,22 @@ img{
 .modal-button{
     float: right;
     border-style: none;
-    background-color:var(--white-color);  
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.icon-close{
+    width: 11px;
+    height: 11px;
+}
+.modal-button:hover
+.modal-button:focus{
+    fill: var(--accent-color);
 }
 
