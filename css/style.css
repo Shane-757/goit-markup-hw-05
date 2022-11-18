@@ -153,8 +153,8 @@ img{
 .header-item-contact-link:hover,
 .header-item-contact-link:focus{
     color:var(--accent-color);
-    transition: transform var(--time) var(--time-function);
 }
+
 .header-item-contact-icon{
     margin-right: 10px;
     fill: currentColor;
@@ -208,6 +208,7 @@ img{
     border-radius: 4px;
     border: none;
     transition: background-color var(--time) var(--time-function);
+    transition: box-shadow var(--time) var(--time-function);
 }
 
 .hero-button:hover,
@@ -303,7 +304,7 @@ img{
     position: absolute;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14 calc(16/14);
     bottom: 0;
     right: 0;
     left: 0;
@@ -312,7 +313,7 @@ img{
     padding-top: 28px;
     padding-bottom: 27px;
     color: var(--white-color);
-    background:rgba(47, 48, 58, 0.800);
+    background-color:rgba(47, 48, 58, 0.800);
 }
 
 /*TEAM*/
@@ -466,7 +467,8 @@ img{
     padding: 6px 26px;
     border-style: none;
     border-radius: 4px;
-    transition: color var(--time) var(--time-function);
+    transition: color var(--time) var(--time-function),
+        background-color var(--time) var(--time-function);
 }
 
 .navigation-button:hover,
@@ -694,13 +696,13 @@ img{
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
     width: 30px;
-    height: 30px;   
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.icon-close{
-    width: 18px;
-    height: 18px;   
-}
+
 
 
 
